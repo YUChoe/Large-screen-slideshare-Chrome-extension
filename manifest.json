@@ -1,0 +1,23 @@
+{
+   "browser_action": {
+      "default_icon": "slideshare.png"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "large_screen_slideshare.js" ],
+      "matches": [ "http://www.slideshare.net/*" ]
+   } ],
+   "description": "This plusin will enlarge slides for slideshare.com",
+   "icons": {
+      "128": "slideshare.png",
+      "16": "slideshare16.png",
+      "48": "slideshare48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtT/7Vqo8/JXlGxcMTcUPV9pQVnEODLEYl9FPhO/8xZfoysxrqdpT8kbCSMuSarmODhlYFm2r1/GZnZx/uUpWYMssZPgSNUMT+q6S9wtzGoeaCNf1vgEcxXxZPETHKTXB99EJHCCgVI246T89frxjAnrmiG9CpWYT4VsC7FdQnqbISCO/SMfXXI2+RyIKlQP20+hH41/7p0rZ/M7DwVlHgtB7UGu7BY0CvfwY354r0STGYCBnEs5G5K2vR/vpiB4hVeml+VrOLy5MNOmzENcmza9ysMuGopI08ZEuaFImfm86QDGVGrbM+2pilbUoCE7IbpS+1BEnglZspC34oT9k4wIDAQAB",
+   "manifest_version": 2,
+   "name": "Large screen slideshare Plugin",
+   "permissions": [ "activeTab" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.9",
+   "web_accessible_resources": [ "large_screen_slideshare.css" ]
+}
